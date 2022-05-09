@@ -1,0 +1,9 @@
+It's necessary to install the packages openconnect (handles communication with the VPN
+server) and vpnc-script (configure routing and DNS).
+# sudo apt-get install openconnect vpnc-scripts
+Connecting
+# sudo openconnect -b vpn.epfl.ch
+Insert the username and password GASPAR .
+Option -b allows you to run the VPN in the background.
+Disconnecting
+# sudo pkill openconnect
